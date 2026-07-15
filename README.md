@@ -29,3 +29,16 @@ The circuit configuration is defined in `diagram.json`, optimized for the Raspbe
 | **Water Level Potentiometer** | Variable Resistance Sensor | Simulates tank volume monitoring, providing real-time data to prevent pump dry-running. |
 | **Relay Module** | Electromagnetic Switch | Acts as the actuator that controls the irrigation system (or other high-voltage devices) based on sensor logic. |
 | **NeoPixel (WS2812B)** | Addressable RGB LED | Provides visual status indicators for system activity and light automation. |
+
+## Pinout Configuration
+
+| Component | Pico W Pin | Role |
+| :--- | :--- | :--- |
+| DHT22 | GP4 | Digital Data (1-Wire) |
+| LDR (Photoresistor) | GP26 | Analog Input (ADC0) |
+| Soil Moisture Pot | GP27 | Analog Input (ADC1) |
+| Water Level Pot | GP28 | Analog Input (ADC2) |
+| Relay Module | GP15 | Digital Output |
+| NeoPixel | GP16 | Digital Output (Data) |
+
+
